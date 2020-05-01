@@ -8,6 +8,7 @@ let info = "";
 const infoDiv = document.querySelector(".info");
 const countryStatsDiv = document.querySelector(".country-stats");
 
+
 countriesSelect.addEventListener("change", e => {
   const countryCode = e.target.value;
   console.log(countryCode);
@@ -82,6 +83,7 @@ function displayStatistics(stats) {
         </div>
     `;
   countryStatsDiv.innerHTML = countryStats;
+  
 }
 
 function getLastDataUpdateDate(lastUpdate) {
